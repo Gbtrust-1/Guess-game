@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  box-shadow: 0 0 0 0.8rem #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #313131;
+  font-family: "Sour Gummy", sans-serif;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 8rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.actions,
+.informations {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.mystery-box {
+  width: 40rem;
+  height: 20rem;
+  font-size: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  border-radius: 0.5rem;
+}
+
+.guess {
+  width: 40rem;
+  height: 10rem;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  color: #313131;
+  font-size: 7rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-weight: 800;
+}
+
+.btn-holder {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+
+.btn {
+  padding: 2rem 4rem;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  color: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-check {
+  background-color: #40c057;
+}
+
+.btn-check:hover {
+  background-color: #2f9e44;
+}
+
+.btn-reset {
+  background-color: #fa5252;
+}
+
+.btn-reset:hover {
+  background-color: #e03131;
+}
+
+.details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.details li {
+  display: flex;
+  gap: 2rem;
+}
+
+.attempt {
+  color: #fa5252;
+  font-weight: 800;
+}
+
+.highscore {
+  color: #40c057;
+  font-weight: 800;
+}
